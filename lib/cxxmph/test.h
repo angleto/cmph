@@ -9,10 +9,9 @@
 // included last.
 
 #include <check.h>
-#include <stdio.h>
 
-Suite* global_suite();
-TCase* global_tc_core();
+extern Suite* global_suite;
+extern TCase* global_tc_core;
 
 // Creates a new test case calling boolean_function. Name must be a valid,
 // unique c identifier when prefixed with tc_.
@@ -25,7 +24,7 @@ TCase* global_tc_core();
 
 struct TestCase {
   TestCase(void (*f)(int)) {
-    tcase_add_test(global_tc_core(), f);
+    tcase_add_test(global_tc_core, f);
   }
 };
 
