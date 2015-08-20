@@ -11,6 +11,9 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+#include <cstdlib>
+#include <random>
+#include <stdint.h>
 
 using std::cerr;
 using std::cout;

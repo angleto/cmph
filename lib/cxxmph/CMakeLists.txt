@@ -1,0 +1,48 @@
+#cxxmph library
+
+SET (CXXMPH_LIB_SRCS
+	${CMAKE_CURRENT_SOURCE_DIR}/benchmark.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/benchmark.h
+	${CMAKE_CURRENT_SOURCE_DIR}/bm_common.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/bm_common.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/bm_map.cc
+	#${CMAKE_CURRENT_SOURCE_DIR}/cxxmph.cc
+	#${CMAKE_CURRENT_SOURCE_DIR}/dense_hash_map_test.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/hollow_iterator.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/hollow_iterator_test.cc
+	#${CMAKE_CURRENT_SOURCE_DIR}/map_tester.cc
+	#${CMAKE_CURRENT_SOURCE_DIR}/map_tester.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/map_tester_test.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/mph_bits.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/mph_bits.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/mph_bits_test.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/mph_index.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/mph_index.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/mph_index_test.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/mph_map.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/mph_map_test.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/MurmurHash3.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/MurmurHash3.h
+	${CMAKE_CURRENT_SOURCE_DIR}/seeded_hash.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/seeded_hash_test.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/stringpiece.h
+	${CMAKE_CURRENT_SOURCE_DIR}/string_util.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/string_util.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/string_util_test.cc
+	#${CMAKE_CURRENT_SOURCE_DIR}/test.cc
+	#${CMAKE_CURRENT_SOURCE_DIR}/test.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/test_test.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/trigraph.cc
+	${CMAKE_CURRENT_SOURCE_DIR}/trigraph.h
+	#${CMAKE_CURRENT_SOURCE_DIR}/trigraph_test.cc
+  )
+
+ADD_LIBRARY(${CXXMPH_LIBRARIES} ${LINKING_MODE}
+	${CXXMPH_LIB_SRCS}
+)
+
+#target_link_libraries(${CXXMPH_LIBRARIES}
+#)
+
+INSTALL(TARGETS ${CXXMPH_LIBRARIES} RUNTIME DESTINATION bin LIBRARY DESTINATION bin ARCHIVE DESTINATION bin)
+

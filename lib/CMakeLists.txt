@@ -1,3 +1,3 @@
 add_subdirectory(cmph)
-#add_subdirectory(cxxmph)
+add_subdirectory(cxxmph)
 
