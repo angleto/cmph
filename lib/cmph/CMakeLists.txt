@@ -2,7 +2,6 @@
 
 SET (CMPH_LIB_SRCS
 	${CMAKE_CURRENT_SOURCE_DIR}/bdz.c
-	${CMAKE_CURRENT_SOURCE_DIR}/bdz_gen_lookup_table.c
 	${CMAKE_CURRENT_SOURCE_DIR}/bdz.h
 	${CMAKE_CURRENT_SOURCE_DIR}/bdz_ph.c
 	${CMAKE_CURRENT_SOURCE_DIR}/bdz_ph.h
@@ -21,8 +20,6 @@ SET (CMPH_LIB_SRCS
 	${CMAKE_CURRENT_SOURCE_DIR}/brz_structs.h
 	${CMAKE_CURRENT_SOURCE_DIR}/buffer_entry.c
 	${CMAKE_CURRENT_SOURCE_DIR}/buffer_entry.h
-	${CMAKE_CURRENT_SOURCE_DIR}/buffer_manage.c
-	${CMAKE_CURRENT_SOURCE_DIR}/buffer_manage.h
 	${CMAKE_CURRENT_SOURCE_DIR}/buffer_manager.c
 	${CMAKE_CURRENT_SOURCE_DIR}/buffer_manager.h
 	${CMAKE_CURRENT_SOURCE_DIR}/chd.c
@@ -34,7 +31,6 @@ SET (CMPH_LIB_SRCS
 	${CMAKE_CURRENT_SOURCE_DIR}/chm.c
 	${CMAKE_CURRENT_SOURCE_DIR}/chm.h
 	${CMAKE_CURRENT_SOURCE_DIR}/chm_structs.h
-	${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt
 	${CMAKE_CURRENT_SOURCE_DIR}/cmph_benchmark.c
 	${CMAKE_CURRENT_SOURCE_DIR}/cmph_benchmark.h
 	${CMAKE_CURRENT_SOURCE_DIR}/cmph.c
@@ -48,32 +44,22 @@ SET (CMPH_LIB_SRCS
 	${CMAKE_CURRENT_SOURCE_DIR}/compressed_seq.c
 	${CMAKE_CURRENT_SOURCE_DIR}/compressed_seq.h
 	${CMAKE_CURRENT_SOURCE_DIR}/debug.h
-	${CMAKE_CURRENT_SOURCE_DIR}/djb2_hash.c
-	${CMAKE_CURRENT_SOURCE_DIR}/djb2_hash.h
 	${CMAKE_CURRENT_SOURCE_DIR}/fch_buckets.c
 	${CMAKE_CURRENT_SOURCE_DIR}/fch_buckets.h
 	${CMAKE_CURRENT_SOURCE_DIR}/fch.c
 	${CMAKE_CURRENT_SOURCE_DIR}/fch.h
 	${CMAKE_CURRENT_SOURCE_DIR}/fch_structs.h
-	${CMAKE_CURRENT_SOURCE_DIR}/fnv_hash.c
-	${CMAKE_CURRENT_SOURCE_DIR}/fnv_hash.h
 	${CMAKE_CURRENT_SOURCE_DIR}/graph.c
 	${CMAKE_CURRENT_SOURCE_DIR}/graph.h
 	${CMAKE_CURRENT_SOURCE_DIR}/hash.c
 	${CMAKE_CURRENT_SOURCE_DIR}/hash.h
 	${CMAKE_CURRENT_SOURCE_DIR}/hash_state.h
-	${CMAKE_CURRENT_SOURCE_DIR}/hashtree.c
-	${CMAKE_CURRENT_SOURCE_DIR}/hashtree.h
-	${CMAKE_CURRENT_SOURCE_DIR}/hashtree_structs.h
 	${CMAKE_CURRENT_SOURCE_DIR}/jenkins_hash.c
 	${CMAKE_CURRENT_SOURCE_DIR}/jenkins_hash.h
 	${CMAKE_CURRENT_SOURCE_DIR}/linear_string_map.c
 	${CMAKE_CURRENT_SOURCE_DIR}/linear_string_map.h
-	${CMAKE_CURRENT_SOURCE_DIR}/main.c
 	${CMAKE_CURRENT_SOURCE_DIR}/miller_rabin.c
 	${CMAKE_CURRENT_SOURCE_DIR}/miller_rabin.h
-	${CMAKE_CURRENT_SOURCE_DIR}/sdbm_hash.c
-	${CMAKE_CURRENT_SOURCE_DIR}/sdbm_hash.h
 	${CMAKE_CURRENT_SOURCE_DIR}/select.c
 	${CMAKE_CURRENT_SOURCE_DIR}/select.h
 	${CMAKE_CURRENT_SOURCE_DIR}/select_lookup_tables.h
