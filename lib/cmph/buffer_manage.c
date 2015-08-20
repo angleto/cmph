@@ -44,7 +44,9 @@ cmph_uint8 * buffer_manage_read_key(buffer_manage_t * buffer_manage, cmph_uint32
 		buffer_entry_set_capacity(buffer_manage->buffer_entries[index], new_capacity);
 		//fprintf(stderr, "recovering memory\n");
 	}
-	key = buffer_entry_read_key(buffer_manage->buffer_entries[index]);
+	
+	cmph_uint32 keylen = 0 ;
+	key = buffer_entry_read_key(buffer_manage->buffer_entries[index], &keylen);
 	if (key == NULL) // storing memory to be recovered
 	{
 		buffer_manage->memory_avail_list[++(buffer_manage->pos_avail_list)] = buffer_entry_get_capacity(buffer_manage->buffer_entries[index]);

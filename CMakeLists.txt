@@ -53,7 +53,7 @@ INCLUDE_DIRECTORIES(${CMPH_INCLUDE_PATH})
 
 # defining cmph library name and include path
 SET(CXXMPH_INCLUDE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/lib/cxxmph)
-SET(CXXMPH_LIBRARIES cxxmph)
+#SET(CXXMPH_LIBRARIES cxxmph)
 INCLUDE_DIRECTORIES(${CXXMPH_INCLUDE_PATH})
 
 # add lib subdirecory with libraries
